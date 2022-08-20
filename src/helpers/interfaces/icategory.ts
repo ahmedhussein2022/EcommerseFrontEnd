@@ -7,7 +7,7 @@ export interface ICategory {
 }
 
 export interface ICategoryResponse{
-        success?: boolean;
+        succcess?: boolean;
         message?: string;
         data?: any;
 }

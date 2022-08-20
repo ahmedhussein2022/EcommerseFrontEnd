@@ -36,10 +36,8 @@ export class CategoryService {
 
   }
   getAll():Observable<ICategoryResponse>{
-    let url="http://localhost:5092/api/Category/GetallCategories";
-    return this.http.get<ICategoryResponse>(url).pipe(
-      retry(3),
-      );
+    let url="http://localhost:5092/api/ProductCategory";
+    return this.http.get<ICategoryResponse>(url);
 
   }
 

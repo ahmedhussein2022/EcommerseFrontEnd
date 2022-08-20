@@ -83,7 +83,7 @@ export class ProductService {
 
    getProducts():Observable<IProductResponse>
    {
-    let url = "http://localhost:5092/api/Product";
+    let url = "http://localhost:5092/api/Product/ApprovedProducts";
     return this.httpClient.get<IProductResponse>(url,this.gerericService.httpOptions).
            pipe(
    catchError(error=>this.gerericService.handleError(error))
