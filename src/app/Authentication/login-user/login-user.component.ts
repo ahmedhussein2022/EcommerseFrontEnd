@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
@@ -23,7 +24,7 @@ export class LoginUserComponent implements OnInit {
 
   constructor(private http:HttpClient,private router:Router
         ,private lservice:LoginServiceService
-                ,private fb:FormBuilder) { }
+                ,private fb:FormBuilder,private location:Location) { }
 
 //new update by ataa
 
@@ -60,20 +61,24 @@ export class LoginUserComponent implements OnInit {
       
     }},
     (error)=>console.log(error)
-    );}
-    
+    );
+    this.back();
+  }
+    back(){
+      this.location.back();
+    }
     //this.user=this.getMe();
 closeAlert(){
   this.alert=false;
 }
 //////////////Amr method to get userdata
-  // getme() {
-  //   this.lservice.getMe().subscribe((name) => {
-  //     this.UserName=name.userName;
-  //     this.UserId=name.userId;
-  //     this.Role=name.roles;
-  //     console.log(this.Role.includes('Admin')); //false or true
-  //     console.log(this.lservice.Role); //user
-  //   });
-  // }
+   getme() {
+     this.lservice.getMe().subscribe((name) => {
+       this.UserName=name.userName;
+       this.UserId=name.userId;
+       this.Role=name.roles;
+       console.log(this.Role.includes('Admin')); //false or true
+       console.log(name); //user
+     });
+ }
 }
