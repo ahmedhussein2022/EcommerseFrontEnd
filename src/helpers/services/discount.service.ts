@@ -33,7 +33,7 @@ export class DiscountService {
    getDiscountById(id:number):Observable<IDiscountResponse>{
     let api = "http://localhost:5092/api/Discount/getDiscountByID?Id="+id;
     return this.httpClient.get<IDiscountResponse>(api)
-    .    pipe(retry(3),catchError((error)=>this.gerericService.handleError(error)));
+    .pipe(retry(3),catchError((error)=>this.gerericService.handleError(error)));
   } 
   updateDiscount(id:number,model:IDiscount):Observable<IDiscountResponse>
   {

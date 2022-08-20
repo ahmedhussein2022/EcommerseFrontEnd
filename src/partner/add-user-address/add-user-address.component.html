@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-12 col-md-2"></div>
     <div class="col-12 col-md-8" >
-        <h3  class="shadow bg-light text-dark text-center fs-4 p-2 rounded-pill">{{'AddUserAddress'|translate}}</h3>
+        <h3  class="shadow bg-light text-dark text-center fs-4 p-2 rounded-pill">adduseraddress</h3>
 
     <form [formGroup]="AdduserAddress" class="form-control" (ngSubmit)="AddNewUserAddress()">
 
@@ -47,15 +47,15 @@
         </div>
         <div class="form-group">
             <label>telephone</label>
-            <input type="text" [class.is-invalid]="AdduserAddress.get('telephone')?.invalid&&AdduserAddress.get('telephone')?.touched" formControlName="telephone" class="form-control">
+            <input type="tel" [class.is-invalid]="AdduserAddress.get('telephone')?.invalid&&AdduserAddress.get('telephone')?.touched" formControlName="telephone" class="form-control">
             <div *ngIf="AdduserAddress.get('telephone')?.errors&&AdduserAddress.get('telephone')?.touched">
                 <small *ngIf= "AdduserAddress.get('telephone')?.errors?.['Required']">Required</small>
-                <small *ngIf= "AdduserAddress.get('telephone')?.errors?.['maxlength']" class="text-danger">must less than 10 letters</small>
+                <small *ngIf= "AdduserAddress.get('telephone')?.errors?.['maxlength']" class="text-danger">must less than 11 letters and more than 5 letters</small>
             </div>
         </div>
         <div class="form-group">
             <label>mobile</label>
-            <input type="text" [class.is-invalid]="AdduserAddress.get('mobile')?.invalid&&AdduserAddress.get('mobile')?.touched" formControlName="mobile" class="form-control">
+            <input type="tel" [class.is-invalid]="AdduserAddress.get('mobile')?.invalid&&AdduserAddress.get('mobile')?.touched" formControlName="mobile" class="form-control">
             <div *ngIf="AdduserAddress.get('mobile')?.errors&&AdduserAddress.get('mobile')?.touched">
                 <small *ngIf= "AdduserAddress.get('mobile')?.errors?.['Required']">Required</small>
                 <small *ngIf= "AdduserAddress.get('mobile')?.errors?.['maxlength']" class="text-danger">must be 11 letters</small>

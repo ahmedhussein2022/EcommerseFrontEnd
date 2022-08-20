@@ -18,8 +18,8 @@ const routes: Routes = [
     {path:'addDiscount',component:PAddDiscountComponent},
     {path:'AddNewUserAddress',component:AddUserAddressComponent},
     {path:'admin/addDiscount',component:AddDiscountComponent},
-    {path:'admin/showAllDiscounts',component:ShowDiscountsComponent},
-    {path:'admin/updateDiscount/:id',component:AddDiscountComponent},
+    {path:'showAllDiscounts',component:ShowDiscountsComponent},
+    {path:'updateDiscount/:id',component:AddDiscountComponent},
     {path:'deleteDiscount/:id',component:DeleteDiscountComponent},
     {path:'admin/assignDisountToProduct',component:AssignDisountToProductComponent}
     

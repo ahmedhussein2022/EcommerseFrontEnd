@@ -193,6 +193,7 @@
         "endTimeRequiredError":"يجب ادخال وقت نهاية الخصم",
         "endTimePatternError":"اختر وقت نهاية الخصم بطريقة صحيحة",
         "assignDisountToProduct":"اسناد خصم لمنتج"
+        
     },
     "home":{
         "showAllProducts":"عرض جميع المنتجات",
@@ -201,6 +202,18 @@
         "productsByPartner":"فلتر النتجات بالبائع",
         "productsByProductName":"فلتر باسم المنتج",
         "productsByPrice":"فلتر بالسعر"
-    }
+    },
+    "useraddress":{
+        "adduseraddress":"اضافة عنوان للمستخدم",
+        "addressLine1":"العنوان الاول للمستخدم",
+        "addressLine2":"العنوان الثاني للمستخدم",
+        "city":"   مدينه المستخدم",
+        "postalCode":"الرمز البريدي للمستخدم",
+        "country":"بلد المستخدم",
+        "telephone":"التلفون الارضي للمستخدم",
+        "mobile":"التلفون الشخصي للمستخدم",
+        "cancel":"إلــغاء",
+        "AddUserAddress":"اضافة عنوان للمستخدم"
+     }
 
 }

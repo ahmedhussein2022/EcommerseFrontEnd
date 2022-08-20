@@ -201,5 +201,17 @@
         "productsByPartner":"Products By Partner",
         "productsByProductName":"Products By Product Name",
         "productsByPrice":"Products By Price"
-    }
+    },
+     "useraddress":{
+        "adduseraddress":"Add User Address",
+        "addressLine1":"User addressLine1 In English",
+        "addressLine2":"User addressLine2 In English",
+        "city":"User City",
+        "postalCode":"User postalCode",
+        "country":"User country",
+        "telephone":"User telephone",
+        "mobile":"User mobile",
+        "cancel":"Cancel",
+        "AddUserAddress":"AddUserAddress"
+     }
 }
